@@ -1,0 +1,873 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="Display.xsl"?>
+<Root PresetName="Custom" MajorVersion="1" MinorVersion="8">
+	<KeyboardLayout>en-GB</KeyboardLayout>
+	<LockedDevice>{NoDevice}</LockedDevice>
+	<MouseXMode Value=""/>
+	<MouseXDecay Value="0"/>
+	<MouseYMode Value=""/>
+	<MouseYDecay Value="0"/>
+	<MouseReset>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</MouseReset>
+	<MouseSensitivity Value="1.00000000"/>
+	<MouseDecayRate Value="4.00000000"/>
+	<MouseDeadzone Value="0.05000000"/>
+	<MouseLinearity Value="1.00000000"/>
+	<MouseGUI Value="0"/>
+	<YawAxisRaw>
+		<Binding Device="LogitechG940Pedals" Key="Joy_RZAxis"/>
+		<Inverted Value="1"/>
+		<Deadzone Value="0.09825753"/>
+	</YawAxisRaw>
+	<YawLeftButton>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</YawLeftButton>
+	<YawRightButton>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</YawRightButton>
+	<YawToRollMode Value="Bindings_YawIntoRollNone"/>
+	<YawToRollSensitivity Value="0.40000001"/>
+	<YawToRollButton>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+		<ToggleOn Value="0"/>
+	</YawToRollButton>
+	<RollAxisRaw>
+		<Binding Device="LogitechG940Joystick" Key="Joy_XAxis"/>
+		<Inverted Value="0"/>
+		<Deadzone Value="0.09825753"/>
+	</RollAxisRaw>
+	<RollLeftButton>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</RollLeftButton>
+	<RollRightButton>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</RollRightButton>
+	<PitchAxisRaw>
+		<Binding Device="LogitechG940Joystick" Key="Joy_YAxis"/>
+		<Inverted Value="1"/>
+		<Deadzone Value="0.10988563"/>
+	</PitchAxisRaw>
+	<PitchUpButton>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</PitchUpButton>
+	<PitchDownButton>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</PitchDownButton>
+	<LateralThrustRaw>
+		<Binding Device="LogitechG940Joystick" Key="Joy_VAxis"/>
+		<Inverted Value="0"/>
+		<Deadzone Value="0.00000000"/>
+	</LateralThrustRaw>
+	<LeftThrustButton>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</LeftThrustButton>
+	<RightThrustButton>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</RightThrustButton>
+	<VerticalThrustRaw>
+		<Binding Device="LogitechG940Joystick" Key="Joy_UAxis"/>
+		<Inverted Value="1"/>
+		<Deadzone Value="0.00000000"/>
+	</VerticalThrustRaw>
+	<UpThrustButton>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</UpThrustButton>
+	<DownThrustButton>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</DownThrustButton>
+	<AheadThrust>
+		<Binding Device="{NoDevice}" Key=""/>
+		<Inverted Value="0"/>
+		<Deadzone Value="0.00000000"/>
+	</AheadThrust>
+	<ForwardThrustButton>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</ForwardThrustButton>
+	<BackwardThrustButton>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</BackwardThrustButton>
+	<YawAxisAlternate>
+		<Binding Device="{NoDevice}" Key=""/>
+		<Inverted Value="0"/>
+		<Deadzone Value="0.00000000"/>
+	</YawAxisAlternate>
+	<RollAxisAlternate>
+		<Binding Device="{NoDevice}" Key=""/>
+		<Inverted Value="0"/>
+		<Deadzone Value="0.00000000"/>
+	</RollAxisAlternate>
+	<PitchAxisAlternate>
+		<Binding Device="{NoDevice}" Key=""/>
+		<Inverted Value="0"/>
+		<Deadzone Value="0.00000000"/>
+	</PitchAxisAlternate>
+	<LateralThrustAlternate>
+		<Binding Device="{NoDevice}" Key=""/>
+		<Inverted Value="0"/>
+		<Deadzone Value="0.00000000"/>
+	</LateralThrustAlternate>
+	<VerticalThrustAlternate>
+		<Binding Device="{NoDevice}" Key=""/>
+		<Inverted Value="0"/>
+		<Deadzone Value="0.00000000"/>
+	</VerticalThrustAlternate>
+	<UseAlternateFlightValuesToggle>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+		<ToggleOn Value="1"/>
+	</UseAlternateFlightValuesToggle>
+	<ThrottleAxis>
+		<Binding Device="LogitechG940Throttle" Key="Joy_YAxis"/>
+		<Inverted Value="1"/>
+		<Deadzone Value="0.00000000"/>
+	</ThrottleAxis>
+	<ThrottleRange Value="Bindings_ThrottleForewardOnly"/>
+	<ToggleReverseThrottleInput>
+		<Primary Device="LogitechG940Throttle" Key="Joy_1"/>
+		<Secondary Device="1267A001" Key="Joy_9"/>
+		<ToggleOn Value="0"/>
+	</ToggleReverseThrottleInput>
+	<ForwardKey>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</ForwardKey>
+	<BackwardKey>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</BackwardKey>
+	<ThrottleIncrement Value="0.00000000"/>
+	<SetSpeedMinus100>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</SetSpeedMinus100>
+	<SetSpeedMinus75>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</SetSpeedMinus75>
+	<SetSpeedMinus50>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</SetSpeedMinus50>
+	<SetSpeedMinus25>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</SetSpeedMinus25>
+	<SetSpeedZero>
+		<Primary Device="06A305D2" Key="Joy_32"/>
+		<Secondary Device="LogitechG940Throttle" Key="Joy_4"/>
+	</SetSpeedZero>
+	<SetSpeed25>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</SetSpeed25>
+	<SetSpeed50>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</SetSpeed50>
+	<SetSpeed75>
+		<Primary Device="06A305D2" Key="Joy_18"/>
+		<Secondary Device="LogitechG940Throttle" Key="Joy_12"/>
+	</SetSpeed75>
+	<SetSpeed100>
+		<Primary Device="06A305D2" Key="Joy_11"/>
+		<Secondary Device="LogitechG940Throttle" Key="Joy_12">
+			<Modifier Device="LogitechG940Joystick" Key="Joy_6"/>
+		</Secondary>
+	</SetSpeed100>
+	<YawAxis_Landing>
+		<Binding Device="{NoDevice}" Key=""/>
+		<Inverted Value="0"/>
+		<Deadzone Value="0.00000000"/>
+	</YawAxis_Landing>
+	<YawLeftButton_Landing>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</YawLeftButton_Landing>
+	<YawRightButton_Landing>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</YawRightButton_Landing>
+	<YawToRollMode_Landing Value=""/>
+	<PitchAxis_Landing>
+		<Binding Device="{NoDevice}" Key=""/>
+		<Inverted Value="0"/>
+		<Deadzone Value="0.00000000"/>
+	</PitchAxis_Landing>
+	<PitchUpButton_Landing>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</PitchUpButton_Landing>
+	<PitchDownButton_Landing>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</PitchDownButton_Landing>
+	<RollAxis_Landing>
+		<Binding Device="{NoDevice}" Key=""/>
+		<Inverted Value="0"/>
+		<Deadzone Value="0.00000000"/>
+	</RollAxis_Landing>
+	<RollLeftButton_Landing>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</RollLeftButton_Landing>
+	<RollRightButton_Landing>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</RollRightButton_Landing>
+	<LateralThrust_Landing>
+		<Binding Device="{NoDevice}" Key=""/>
+		<Inverted Value="0"/>
+		<Deadzone Value="0.00000000"/>
+	</LateralThrust_Landing>
+	<LeftThrustButton_Landing>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</LeftThrustButton_Landing>
+	<RightThrustButton_Landing>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</RightThrustButton_Landing>
+	<VerticalThrust_Landing>
+		<Binding Device="{NoDevice}" Key=""/>
+		<Inverted Value="0"/>
+		<Deadzone Value="0.00000000"/>
+	</VerticalThrust_Landing>
+	<UpThrustButton_Landing>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</UpThrustButton_Landing>
+	<DownThrustButton_Landing>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</DownThrustButton_Landing>
+	<AheadThrust_Landing>
+		<Binding Device="{NoDevice}" Key=""/>
+		<Inverted Value="0"/>
+		<Deadzone Value="0.00000000"/>
+	</AheadThrust_Landing>
+	<ForwardThrustButton_Landing>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</ForwardThrustButton_Landing>
+	<BackwardThrustButton_Landing>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</BackwardThrustButton_Landing>
+	<ToggleFlightAssist>
+		<Primary Device="LogitechG940Joystick" Key="Joy_7"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+		<ToggleOn Value="1"/>
+	</ToggleFlightAssist>
+	<YawToRollMode_FAOff Value=""/>
+	<UseBoostJuice>
+		<Primary Device="LogitechG940Throttle" Key="Joy_3"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</UseBoostJuice>
+	<HyperSuperCombination>
+		<Primary Device="Keyboard" Key="Key_J"/>
+		<Secondary Device="LogitechG940Joystick" Key="Joy_7">
+			<Modifier Device="LogitechG940Joystick" Key="Joy_6"/>
+		</Secondary>
+	</HyperSuperCombination>
+	<Supercruise>
+		<Primary Device="LogitechG940Throttle" Key="Joy_POV2Right"/>
+		<Secondary Device="06A305D2" Key="Joy_12"/>
+	</Supercruise>
+	<Hyperspace>
+		<Primary Device="LogitechG940Throttle" Key="Joy_POV2Left"/>
+		<Secondary Device="06A305D2" Key="Joy_10"/>
+	</Hyperspace>
+	<DisableRotationCorrectToggle>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+		<ToggleOn Value="1"/>
+	</DisableRotationCorrectToggle>
+	<OrbitLinesToggle>
+		<Primary Device="Keyboard" Key="Key_Equals"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</OrbitLinesToggle>
+	<SelectTarget>
+		<Primary Device="LogitechG940Joystick" Key="Joy_5"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</SelectTarget>
+	<CycleNextTarget>
+		<Primary Device="LogitechG940Throttle" Key="Joy_POV1Right"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</CycleNextTarget>
+	<CyclePreviousTarget>
+		<Primary Device="LogitechG940Throttle" Key="Joy_POV1Left"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</CyclePreviousTarget>
+	<SelectHighestThreat>
+		<Primary Device="LogitechG940Throttle" Key="Joy_2"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</SelectHighestThreat>
+	<CycleNextHostileTarget>
+		<Primary Device="LogitechG940Throttle" Key="Joy_POV1Up"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</CycleNextHostileTarget>
+	<CyclePreviousHostileTarget>
+		<Primary Device="LogitechG940Throttle" Key="Joy_POV1Down"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</CyclePreviousHostileTarget>
+	<TargetWingman0>
+		<Primary Device="Keyboard" Key="Key_7"/>
+		<Secondary Device="06A305D2" Key="Joy_1"/>
+	</TargetWingman0>
+	<TargetWingman1>
+		<Primary Device="Keyboard" Key="Key_8"/>
+		<Secondary Device="06A305D2" Key="Joy_2"/>
+	</TargetWingman1>
+	<TargetWingman2>
+		<Primary Device="Keyboard" Key="Key_9"/>
+		<Secondary Device="06A305D2" Key="Joy_3"/>
+	</TargetWingman2>
+	<SelectTargetsTarget>
+		<Primary Device="Keyboard" Key="Key_0"/>
+		<Secondary Device="06A305D2" Key="Joy_4"/>
+	</SelectTargetsTarget>
+	<WingNavLock>
+		<Primary Device="Keyboard" Key="Key_Minus"/>
+		<Secondary Device="06A305D2" Key="Joy_5"/>
+	</WingNavLock>
+	<CycleNextSubsystem>
+		<Primary Device="06A305D2" Key="Joy_8"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</CycleNextSubsystem>
+	<CyclePreviousSubsystem>
+		<Primary Device="06A305D2" Key="Joy_15"/>
+		<Secondary Device="LogitechG940Throttle" Key="Joy_POV2Up"/>
+	</CyclePreviousSubsystem>
+	<GunsightSystem/>
+	<TargetNextRouteSystem>
+		<Primary Device="06A305D2" Key="Joy_7"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</TargetNextRouteSystem>
+	<PrimaryFire>
+		<Primary Device="LogitechG940Joystick" Key="Joy_1"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</PrimaryFire>
+	<SecondaryFire>
+		<Primary Device="LogitechG940Joystick" Key="Joy_9"/>
+		<Secondary Device="LogitechG940Joystick" Key="Joy_2"/>
+	</SecondaryFire>
+	<CycleFireGroupNext>
+		<Primary Device="LogitechG940Joystick" Key="Joy_3"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</CycleFireGroupNext>
+	<CycleFireGroupPrevious>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</CycleFireGroupPrevious>
+	<DeployHardpointToggle>
+		<Primary Device="06A305D2" Key="Joy_14"/>
+		<Secondary Device="LogitechG940Joystick" Key="Joy_1">
+			<Modifier Device="LogitechG940Joystick" Key="Joy_6"/>
+		</Secondary>
+	</DeployHardpointToggle>
+	<DeployHardpointsOnFire Value="1"/>
+	<ToggleButtonUpInput>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+		<ToggleOn Value="1"/>
+	</ToggleButtonUpInput>
+	<DeployHeatSink>
+		<Primary Device="06A305D2" Key="Joy_21"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</DeployHeatSink>
+	<ShipSpotLightToggle>
+		<Primary Device="LogitechG940Throttle" Key="Joy_9"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</ShipSpotLightToggle>
+	<RadarRangeAxis>
+		<Binding Device="{NoDevice}" Key=""/>
+		<Inverted Value="0"/>
+		<Deadzone Value="0.00000000"/>
+	</RadarRangeAxis>
+	<RadarIncreaseRange>
+		<Primary Device="LogitechG940Joystick" Key="Pos_Joy_RYAxis"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</RadarIncreaseRange>
+	<RadarDecreaseRange>
+		<Primary Device="LogitechG940Joystick" Key="Neg_Joy_RYAxis"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</RadarDecreaseRange>
+	<IncreaseEnginesPower>
+		<Primary Device="LogitechG940Joystick" Key="Joy_POV1Up"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</IncreaseEnginesPower>
+	<IncreaseWeaponsPower>
+		<Primary Device="LogitechG940Joystick" Key="Joy_POV1Right"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</IncreaseWeaponsPower>
+	<IncreaseSystemsPower>
+		<Primary Device="LogitechG940Joystick" Key="Joy_POV1Left"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</IncreaseSystemsPower>
+	<ResetPowerDistribution>
+		<Primary Device="LogitechG940Joystick" Key="Joy_POV1Down"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</ResetPowerDistribution>
+	<HMDReset>
+		<Primary Device="Keyboard" Key="Key_F12"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</HMDReset>
+	<ToggleCargoScoop>
+		<Primary Device="LogitechG940Throttle" Key="Joy_11"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+		<ToggleOn Value="1"/>
+	</ToggleCargoScoop>
+	<EjectAllCargo>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</EjectAllCargo>
+	<LandingGearToggle>
+		<Primary Device="LogitechG940Throttle" Key="Joy_10"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</LandingGearToggle>
+	<MicrophoneMute>
+		<Primary Device="Keyboard" Key="Key_BackSlash"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</MicrophoneMute>
+	<MuteButtonMode Value="mute_toggle"/>
+	<CqcMuteButtonMode Value="mute_pushToTalk"/>
+	<UseShieldCell>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</UseShieldCell>
+	<FireChaffLauncher>
+		<Primary Device="LogitechG940Throttle" Key="Joy_POV2Down"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</FireChaffLauncher>
+	<PhotoCameraToggle>
+		<Primary Device="Keyboard" Key="Key_Space">
+			<Modifier Device="Keyboard" Key="Key_LeftControl"/>
+			<Modifier Device="Keyboard" Key="Key_LeftAlt"/>
+		</Primary>
+		<Secondary Device="06A305D2" Key="Joy_29"/>
+	</PhotoCameraToggle>
+	<UIFocus>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</UIFocus>
+	<UIFocusMode Value="Bindings_FocusModeHold"/>
+	<FocusLeftPanel>
+		<Primary Device="Keyboard" Key="Key_1"/>
+		<Secondary Device="LogitechG940Throttle" Key="Joy_5"/>
+	</FocusLeftPanel>
+	<FocusCommsPanel>
+		<Primary Device="Keyboard" Key="Key_2"/>
+		<Secondary Device="LogitechG940Throttle" Key="Joy_6"/>
+	</FocusCommsPanel>
+	<FocusOnTextEntryField Value="1"/>
+	<QuickCommsPanel>
+		<Primary Device="Keyboard" Key="Key_Enter"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</QuickCommsPanel>
+	<FocusRadarPanel>
+		<Primary Device="Keyboard" Key="Key_3"/>
+		<Secondary Device="LogitechG940Throttle" Key="Joy_7"/>
+	</FocusRadarPanel>
+	<FocusRightPanel>
+		<Primary Device="Keyboard" Key="Key_4"/>
+		<Secondary Device="LogitechG940Throttle" Key="Joy_8"/>
+	</FocusRightPanel>
+	<LeftPanelFocusOptions Value=""/>
+	<CommsPanelFocusOptions Value="FocusOption_Show"/>
+	<RolePanelFocusOptions Value=""/>
+	<RightPanelFocusOptions Value=""/>
+	<EnableCameraLockOn Value="1"/>
+	<GalaxyMapOpen>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</GalaxyMapOpen>
+	<SystemMapOpen>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</SystemMapOpen>
+	<ShowPGScoreSummaryInput>
+		<Primary Device="Keyboard" Key="Key_F1"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+		<ToggleOn Value="0"/>
+	</ShowPGScoreSummaryInput>
+	<HeadLookToggle>
+		<Primary Device="LogitechG940Joystick" Key="Joy_8"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+		<ToggleOn Value="1"/>
+	</HeadLookToggle>
+	<Pause>
+		<Primary Device="Keyboard" Key="Key_P"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</Pause>
+	<UI_Up>
+		<Primary Device="LogitechG940Joystick" Key="Joy_POV1Up"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</UI_Up>
+	<UI_Down>
+		<Primary Device="LogitechG940Joystick" Key="Joy_POV1Down"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</UI_Down>
+	<UI_Left>
+		<Primary Device="LogitechG940Joystick" Key="Joy_POV1Left"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</UI_Left>
+	<UI_Right>
+		<Primary Device="LogitechG940Joystick" Key="Joy_POV1Right"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</UI_Right>
+	<UI_Select>
+		<Primary Device="LogitechG940Joystick" Key="Joy_6"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</UI_Select>
+	<UI_Back>
+		<Primary Device="LogitechG940Joystick" Key="Joy_7"/>
+		<Secondary Device="Mouse" Key="Mouse_4"/>
+	</UI_Back>
+	<CycleNextPanel>
+		<Primary Device="LogitechG940Throttle" Key="Joy_POV1Right"/>
+		<Secondary Device="LogitechG940Joystick" Key="Joy_5"/>
+	</CycleNextPanel>
+	<CyclePreviousPanel>
+		<Primary Device="LogitechG940Throttle" Key="Joy_POV1Left"/>
+		<Secondary Device="LogitechG940Joystick" Key="Joy_2"/>
+	</CyclePreviousPanel>
+	<MouseHeadlook Value="1"/>
+	<MouseHeadlookInvert Value="0"/>
+	<MouseHeadlookSensitivity Value="0.50000000"/>
+	<HeadlookDefault Value="0"/>
+	<HeadlookIncrement Value="0.00000000"/>
+	<HeadlookMode Value="Bindings_HeadlookModeAccumulate"/>
+	<HeadlookResetOnToggle Value="1"/>
+	<HeadlookSensitivity Value="1.00000000"/>
+	<HeadLookReset>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</HeadLookReset>
+	<HeadLookPitchUp>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</HeadLookPitchUp>
+	<HeadLookPitchDown>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</HeadLookPitchDown>
+	<HeadLookPitchAxisRaw>
+		<Binding Device="LogitechG940Joystick" Key="Joy_UAxis"/>
+		<Inverted Value="1"/>
+		<Deadzone Value="0.00000000"/>
+	</HeadLookPitchAxisRaw>
+	<HeadLookYawLeft>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</HeadLookYawLeft>
+	<HeadLookYawRight>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</HeadLookYawRight>
+	<HeadLookYawAxis>
+		<Binding Device="LogitechG940Joystick" Key="Joy_VAxis"/>
+		<Inverted Value="0"/>
+		<Deadzone Value="0.00000000"/>
+	</HeadLookYawAxis>
+	<CamPitchAxis>
+		<Binding Device="{NoDevice}" Key=""/>
+		<Inverted Value="0"/>
+		<Deadzone Value="0.00000000"/>
+	</CamPitchAxis>
+	<CamPitchUp>
+		<Primary Device="Keyboard" Key="Key_T"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</CamPitchUp>
+	<CamPitchDown>
+		<Primary Device="Keyboard" Key="Key_G"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</CamPitchDown>
+	<CamYawAxis>
+		<Binding Device="{NoDevice}" Key=""/>
+		<Inverted Value="0"/>
+		<Deadzone Value="0.00000000"/>
+	</CamYawAxis>
+	<CamYawLeft>
+		<Primary Device="Keyboard" Key="Key_Q"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</CamYawLeft>
+	<CamYawRight>
+		<Primary Device="Keyboard" Key="Key_E"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</CamYawRight>
+	<CamTranslateYAxis>
+		<Binding Device="{NoDevice}" Key=""/>
+		<Inverted Value="0"/>
+		<Deadzone Value="0.00000000"/>
+	</CamTranslateYAxis>
+	<CamTranslateForward>
+		<Primary Device="Keyboard" Key="Key_W"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</CamTranslateForward>
+	<CamTranslateBackward>
+		<Primary Device="Keyboard" Key="Key_S"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</CamTranslateBackward>
+	<CamTranslateXAxis>
+		<Binding Device="{NoDevice}" Key=""/>
+		<Inverted Value="0"/>
+		<Deadzone Value="0.00000000"/>
+	</CamTranslateXAxis>
+	<CamTranslateLeft>
+		<Primary Device="Keyboard" Key="Key_A"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</CamTranslateLeft>
+	<CamTranslateRight>
+		<Primary Device="Keyboard" Key="Key_D"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</CamTranslateRight>
+	<CamTranslateZAxis>
+		<Binding Device="{NoDevice}" Key=""/>
+		<Inverted Value="0"/>
+		<Deadzone Value="0.00000000"/>
+	</CamTranslateZAxis>
+	<CamTranslateUp>
+		<Primary Device="Keyboard" Key="Key_R"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</CamTranslateUp>
+	<CamTranslateDown>
+		<Primary Device="Keyboard" Key="Key_F"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</CamTranslateDown>
+	<CamZoomAxis>
+		<Binding Device="{NoDevice}" Key=""/>
+		<Inverted Value="0"/>
+		<Deadzone Value="0.00000000"/>
+	</CamZoomAxis>
+	<CamZoomIn>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="Keyboard" Key="Key_Z"/>
+	</CamZoomIn>
+	<CamZoomOut>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="Keyboard" Key="Key_X"/>
+	</CamZoomOut>
+	<CamTranslateZHold>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+		<ToggleOn Value="0"/>
+	</CamTranslateZHold>
+	<ToggleDriveAssist>
+		<Primary Device="LogitechG940Joystick" Key="Joy_7"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+		<ToggleOn Value="1"/>
+	</ToggleDriveAssist>
+	<DriveAssistDefault Value="0"/>
+	<MouseBuggySteeringXMode Value=""/>
+	<MouseBuggySteeringXDecay Value="0"/>
+	<MouseBuggyRollingXMode Value=""/>
+	<MouseBuggyRollingXDecay Value="0"/>
+	<MouseBuggyYMode Value=""/>
+	<MouseBuggyYDecay Value="0"/>
+	<SteeringAxis>
+		<Binding Device="LogitechG940Joystick" Key="Joy_XAxis"/>
+		<Inverted Value="0"/>
+		<Deadzone Value="0.00000000"/>
+	</SteeringAxis>
+	<SteerLeftButton>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</SteerLeftButton>
+	<SteerRightButton>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</SteerRightButton>
+	<BuggyRollAxisRaw>
+		<Binding Device="LogitechG940Joystick" Key="Joy_XAxis"/>
+		<Inverted Value="0"/>
+		<Deadzone Value="0.00000000"/>
+	</BuggyRollAxisRaw>
+	<BuggyRollLeftButton>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</BuggyRollLeftButton>
+	<BuggyRollRightButton>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</BuggyRollRightButton>
+	<BuggyPitchAxis>
+		<Binding Device="LogitechG940Joystick" Key="Joy_YAxis"/>
+		<Inverted Value="1"/>
+		<Deadzone Value="0.00000000"/>
+	</BuggyPitchAxis>
+	<BuggyPitchUpButton>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</BuggyPitchUpButton>
+	<BuggyPitchDownButton>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</BuggyPitchDownButton>
+	<VerticalThrustersButton>
+		<Primary Device="LogitechG940Throttle" Key="Joy_3"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+		<ToggleOn Value="0"/>
+	</VerticalThrustersButton>
+	<BuggyPrimaryFireButton>
+		<Primary Device="LogitechG940Joystick" Key="Joy_1"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</BuggyPrimaryFireButton>
+	<BuggySecondaryFireButton>
+		<Primary Device="LogitechG940Joystick" Key="Joy_2"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</BuggySecondaryFireButton>
+	<AutoBreakBuggyButton>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+		<ToggleOn Value="0"/>
+	</AutoBreakBuggyButton>
+	<HeadlightsBuggyButton>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</HeadlightsBuggyButton>
+	<ToggleBuggyTurretButton>
+		<Primary Device="LogitechG940Throttle" Key="Joy_2"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</ToggleBuggyTurretButton>
+	<SelectTarget_Buggy>
+		<Primary Device="LogitechG940Joystick" Key="Joy_2"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</SelectTarget_Buggy>
+	<MouseTurretXMode Value=""/>
+	<MouseTurretXDecay Value="1"/>
+	<MouseTurretYMode Value=""/>
+	<MouseTurretYDecay Value="1"/>
+	<BuggyTurretYawAxisRaw>
+		<Binding Device="LogitechG940Joystick" Key="Joy_VAxis"/>
+		<Inverted Value="0"/>
+		<Deadzone Value="0.00000000"/>
+	</BuggyTurretYawAxisRaw>
+	<BuggyTurretYawLeftButton>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</BuggyTurretYawLeftButton>
+	<BuggyTurretYawRightButton>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</BuggyTurretYawRightButton>
+	<BuggyTurretPitchAxisRaw>
+		<Binding Device="LogitechG940Joystick" Key="Joy_UAxis"/>
+		<Inverted Value="1"/>
+		<Deadzone Value="0.00000000"/>
+	</BuggyTurretPitchAxisRaw>
+	<BuggyTurretPitchUpButton>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</BuggyTurretPitchUpButton>
+	<BuggyTurretPitchDownButton>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</BuggyTurretPitchDownButton>
+	<DriveSpeedAxis>
+		<Binding Device="LogitechG940Throttle" Key="Joy_YAxis"/>
+		<Inverted Value="0"/>
+		<Deadzone Value="0.00000000"/>
+	</DriveSpeedAxis>
+	<BuggyThrottleRange Value="Bindings_BuggyThrottleForewardOnly"/>
+	<BuggyToggleReverseThrottleInput>
+		<Primary Device="LogitechG940Throttle" Key="Joy_1"/>
+		<Secondary Device="{NoDevice}" Key=""/>
+		<ToggleOn Value="1"/>
+	</BuggyToggleReverseThrottleInput>
+	<BuggyThrottleIncrement Value="0.00000000"/>
+	<IncreaseSpeedButtonMax>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</IncreaseSpeedButtonMax>
+	<DecreaseSpeedButtonMax>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</DecreaseSpeedButtonMax>
+	<IncreaseSpeedButtonPartial>
+		<Binding Device="{NoDevice}" Key=""/>
+		<Inverted Value="0"/>
+		<Deadzone Value="0.00000000"/>
+	</IncreaseSpeedButtonPartial>
+	<DecreaseSpeedButtonPartial>
+		<Binding Device="{NoDevice}" Key=""/>
+		<Inverted Value="0"/>
+		<Deadzone Value="0.00000000"/>
+	</DecreaseSpeedButtonPartial>
+	<IncreaseEnginesPower_Buggy>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</IncreaseEnginesPower_Buggy>
+	<IncreaseWeaponsPower_Buggy>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</IncreaseWeaponsPower_Buggy>
+	<IncreaseSystemsPower_Buggy>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</IncreaseSystemsPower_Buggy>
+	<ResetPowerDistribution_Buggy>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</ResetPowerDistribution_Buggy>
+	<ToggleCargoScoop_Buggy>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+		<ToggleOn Value="0"/>
+	</ToggleCargoScoop_Buggy>
+	<EjectAllCargo_Buggy>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</EjectAllCargo_Buggy>
+	<UIFocus_Buggy>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</UIFocus_Buggy>
+	<FocusLeftPanel_Buggy>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</FocusLeftPanel_Buggy>
+	<FocusCommsPanel_Buggy>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</FocusCommsPanel_Buggy>
+	<QuickCommsPanel_Buggy>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</QuickCommsPanel_Buggy>
+	<FocusRadarPanel_Buggy>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</FocusRadarPanel_Buggy>
+	<FocusRightPanel_Buggy>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</FocusRightPanel_Buggy>
+	<GalaxyMapOpen_Buggy>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</GalaxyMapOpen_Buggy>
+	<SystemMapOpen_Buggy>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+	</SystemMapOpen_Buggy>
+	<HeadLookToggle_Buggy>
+		<Primary Device="{NoDevice}" Key=""/>
+		<Secondary Device="{NoDevice}" Key=""/>
+		<ToggleOn Value="0"/>
+	</HeadLookToggle_Buggy>
+</Root>
