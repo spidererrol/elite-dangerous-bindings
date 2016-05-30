@@ -165,6 +165,38 @@
             </xsl:for-each>
         </table>
     </xsl:template>
+    <xsl:template name="sortdevice">
+        <!-- Use to alter device sort order. !! Each result must be composed of exactly 1 element !! -->
+        <xsl:choose>
+            <xsl:when test=". = '1267A001'">
+                <xsl:text>AAA-Gamepad</xsl:text>
+            </xsl:when>
+            <xsl:when test=". = 'Mouse'">
+                <xsl:text>BBB-Mouse</xsl:text>
+            </xsl:when>
+            <xsl:when test="ends-with(., 'Pedals')">
+                <xsl:text>CCC-Pedals</xsl:text>
+            </xsl:when>
+            <xsl:when test="ends-with(., 'Joystick')">
+                <xsl:text>DDD-Joystick</xsl:text>
+            </xsl:when>
+            <xsl:when test=". = '06A305D2'">
+                <xsl:text>EEE-P8000</xsl:text>
+            </xsl:when>
+            <xsl:when test="ends-with(., 'Throttle')">
+                <xsl:text>FFF-Throttle</xsl:text>
+            </xsl:when>
+            <xsl:when test=". = 'Keyboard'">
+                <xsl:text>000-Keyboard</xsl:text>
+            </xsl:when>
+            <xsl:when test=". = '{NoDevice}'">
+                <xsl:text>Unbound</xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="."/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
     <xsl:template name="displaydevice">
         <xsl:param name="devicename" select="."/>
         <xsl:choose>
@@ -292,13 +324,20 @@
                     </xsl:if>
                 </ol>
                 <hr/>
-                <a name="da"/>
                 <h2>By Device, by Action</h2>
+                <a name="da"/>
                 <fieldset>
                     <xsl:for-each
                         select="distinct-values(//*[@Device][@Device != '{NoDevice}']/@Device)">
-                        <xsl:sort select="."/>
+                        <xsl:sort>
+                            <xsl:call-template name="sortdevice"/>
+                        </xsl:sort>
                         <fieldset>
+                            <xsl:if test=". = 'Keyboard'">
+                                <xsl:attribute name="style">
+                                    <xsl:text>float:right</xsl:text>
+                                </xsl:attribute>
+                            </xsl:if>
                             <xsl:call-template name="device">
                                 <xsl:with-param name="top" select="$top"/>
                                 <xsl:with-param name="device" select="."/>
@@ -307,13 +346,20 @@
                     </xsl:for-each>
                 </fieldset>
                 <hr/>
-                <a name="dk"/>
                 <h2>By Device, by Key</h2>
+                <a name="dk"/>
                 <fieldset>
                     <xsl:for-each
                         select="distinct-values(//*[@Device][@Device != '{NoDevice}']/@Device)">
-                        <xsl:sort select="."/>
+                        <xsl:sort>
+                            <xsl:call-template name="sortdevice"/>
+                        </xsl:sort>
                         <fieldset>
+                            <xsl:if test=". = 'Keyboard'">
+                                <xsl:attribute name="style">
+                                    <xsl:text>float:right</xsl:text>
+                                </xsl:attribute>
+                            </xsl:if>
                             <xsl:call-template name="devicekeys">
                                 <xsl:with-param name="top" select="$top"/>
                                 <xsl:with-param name="device" select="."/>
