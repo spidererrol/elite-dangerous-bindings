@@ -54,6 +54,9 @@
             <xsl:when test="$device = 'LogitechG940Joystick' and $key = 'Joy_VAxis'">
                 <xsl:text>Mini Joy X Axis</xsl:text>
             </xsl:when>
+            <xsl:when test="$device = 'LogitechG940Joystick' and $key = 'Joy_RYAxis'">
+                <xsl:text>Trim 3 Axis</xsl:text>
+            </xsl:when>
             <xsl:when test="$device = 'LogitechG940Throttle' and $key = 'Joy_YAxis'">
                 <xsl:text>Left Throttle</xsl:text>
             </xsl:when>
@@ -163,6 +166,33 @@
                     </xsl:for-each>
                 </tr>
             </xsl:for-each>
+            <xsl:if test="$device = 'Keyboard'">
+                <!-- Remind me what my macro keys do: -->
+                <tr>
+                    <td>G1</td>
+                    <td>Power: Engines (SW)</td>
+                </tr>
+                <tr>
+                    <td>G2</td>
+                    <td>Power: Weapons (SE)</td>
+                </tr>
+                <tr>
+                    <td>G3</td>
+                    <td>Power: Weapons (E)</td>
+                </tr>
+                <tr>
+                    <td>G7</td>
+                    <td>Power: Weapons (S)</td>
+                </tr>
+                <tr>
+                    <td>G8</td>
+                    <td>Power: System (E)</td>
+                </tr>
+                <tr>
+                    <td>G9</td>
+                    <td>Power: System (W)</td>
+                </tr>
+            </xsl:if>
         </table>
     </xsl:template>
     <xsl:template name="sortdevice">
