@@ -2,7 +2,6 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
     exclude-result-prefixes="xs xd" version="2.0">
-    <!-- If you want to use XSLT 1.0 you will have to change 4 instances of distinct-values(...) -->
     <xd:doc scope="stylesheet">
         <xd:desc>
             <xd:p><xd:b>Created on:</xd:b> May 21, 2016</xd:p>
@@ -12,12 +11,38 @@
     </xd:doc>
     <xsl:output method="html" omit-xml-declaration="yes"/>
     <xsl:param name="debug" select="false()"/>
+    <xsl:template name="axisname">
+        <xsl:param name="device"/>
+        <xsl:param name="key"/>
+        <xsl:variable name="rawaxis" select="replace(replace($key, 'Axis$', ''), '^.*_', '')"/>
+        <xsl:choose>
+            <xsl:when test="$device = 'LogitechG940Joystick' and $rawaxis = 'U'">
+                <xsl:text>Mini Joy Y Axis</xsl:text>
+            </xsl:when>
+            <xsl:when test="$device = 'LogitechG940Joystick' and $rawaxis = 'V'">
+                <xsl:text>Mini Joy X Axis</xsl:text>
+            </xsl:when>
+            <xsl:when test="$device = 'LogitechG940Joystick' and $rawaxis = 'RY'">
+                <xsl:text>Trim 3</xsl:text>
+            </xsl:when>
+            <xsl:when test="$device = 'LogitechG940Throttle' and $rawaxis = 'Y'">
+                <xsl:text>Left Throttle</xsl:text>
+            </xsl:when>
+            <xsl:when test="$device = 'LogitechG940Throttle' and $rawaxis = 'X'">
+                <xsl:text>Right Throttle</xsl:text>
+            </xsl:when>
+            <xsl:when test="$device = 'LogitechG940Pedals' and $rawaxis = 'RZ'">
+                <xsl:text>Rudder</xsl:text>
+            </xsl:when>
+            <xsl:otherwise>
+                <xsl:value-of select="concat($rawaxis, ' Axis')"/>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
     <xsl:template name="displaykey">
         <xsl:param name="key" select="@Key"/>
         <xsl:param name="device" select="@Device"/>
-        <xsl:variable name="isaxis" select="substring($key, string-length($key) - 3) = 'Axis'">
-            <!-- XSLT 1.x doesn't have ends-with(...) so this is how I fake it. -->
-        </xsl:variable>
+        <xsl:variable name="isaxis" select="ends-with($key, 'Axis')"/>
         <xsl:choose>
             <!-- NOTE: Order *IS* significant here! -->
             <xsl:when test="$device = '1267A001' and $key = 'Joy_6'">
@@ -48,21 +73,6 @@
             <xsl:when test="$device = 'LogitechG940Joystick' and $key = 'Joy_8'">
                 <xsl:text>Mini Joy Button</xsl:text>
             </xsl:when>
-            <xsl:when test="$device = 'LogitechG940Joystick' and $key = 'Joy_UAxis'">
-                <xsl:text>Mini Joy Y Axis</xsl:text>
-            </xsl:when>
-            <xsl:when test="$device = 'LogitechG940Joystick' and $key = 'Joy_VAxis'">
-                <xsl:text>Mini Joy X Axis</xsl:text>
-            </xsl:when>
-            <xsl:when test="$device = 'LogitechG940Joystick' and $key = 'Joy_RYAxis'">
-                <xsl:text>Trim 3 Axis</xsl:text>
-            </xsl:when>
-            <xsl:when test="$device = 'LogitechG940Throttle' and $key = 'Joy_YAxis'">
-                <xsl:text>Left Throttle</xsl:text>
-            </xsl:when>
-            <xsl:when test="$device = 'LogitechG940Throttle' and $key = 'Joy_XAxis'">
-                <xsl:text>Right Throttle</xsl:text>
-            </xsl:when>
             <xsl:when test="$device = 'LogitechG940Throttle' and starts-with($key, 'Joy_POV1')">
                 <xsl:text>Lower POV </xsl:text>
                 <xsl:value-of select="substring($key, 9)"/>
@@ -71,12 +81,11 @@
                 <xsl:text>Upper POV </xsl:text>
                 <xsl:value-of select="substring($key, 9)"/>
             </xsl:when>
-            <xsl:when test="$device = 'LogitechG940Pedals' and $key = 'Joy_RZAxis'">
-                <xsl:text>Rudder Axis</xsl:text>
-            </xsl:when>
             <xsl:when test="starts-with($key, 'Joy_') and $isaxis">
-                <xsl:value-of select="substring($key, 5, string-length($key) - 8)"/>
-                <xsl:text xml:space="preserve"> Axis</xsl:text>
+                <xsl:call-template name="axisname">
+                    <xsl:with-param name="device" select="$device"/>
+                    <xsl:with-param name="key" select="$key"/>
+                </xsl:call-template>
             </xsl:when>
             <xsl:when test="starts-with($key, 'Joy_POV')">
                 <xsl:value-of select="substring($key, 5)"/>
@@ -102,18 +111,26 @@
                 <xsl:text xml:space="preserve">Button </xsl:text>
                 <xsl:value-of select="substring($key, 7)"/>
             </xsl:when>
+            <xsl:when test="starts-with($key, 'Key_Numpad_')">
+                <xsl:text>Numpad </xsl:text>
+                <xsl:value-of select="substring($key, 12)"/>
+            </xsl:when>
             <xsl:when test="starts-with($key, 'Key_')">
                 <xsl:value-of select="substring($key, 5)"/>
             </xsl:when>
             <xsl:when test="starts-with($key, 'Pos_Joy_') and $isaxis">
                 <xsl:text xml:space="preserve">Increase </xsl:text>
-                <xsl:value-of select="substring($key, 9, string-length($key) - 12)"/>
-                <xsl:text xml:space="preserve"> Axis</xsl:text>
+                <xsl:call-template name="axisname">
+                    <xsl:with-param name="device" select="$device"/>
+                    <xsl:with-param name="key" select="$key"/>
+                </xsl:call-template>
             </xsl:when>
             <xsl:when test="starts-with($key, 'Neg_Joy_') and $isaxis">
                 <xsl:text xml:space="preserve">Decrease </xsl:text>
-                <xsl:value-of select="substring($key, 9, string-length($key) - 12)"/>
-                <xsl:text xml:space="preserve"> Axis</xsl:text>
+                <xsl:call-template name="axisname">
+                    <xsl:with-param name="device" select="$device"/>
+                    <xsl:with-param name="key" select="$key"/>
+                </xsl:call-template>
             </xsl:when>
             <xsl:otherwise>
                 <xsl:value-of select="$key"/>

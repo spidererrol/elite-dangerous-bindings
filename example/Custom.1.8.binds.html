@@ -22,87 +22,9 @@
          <li><a href="#dk">By Device, by Key</a></li>
          <li><a href="#unbound">Unbound Actions</a></li>
       </ol>
-      <hr><a name="da"></a><h2>By Device, by Action</h2>
-      <fieldset>
-         <fieldset>
-            <h3>P8000</h3>
-            <table border="1">
-               <tr>
-                  <td>CycleNextSubsystem</td>
-                  <td>R2C1</td>
-               </tr>
-               <tr>
-                  <td>CyclePreviousSubsystem</td>
-                  <td>R3C1</td>
-               </tr>
-               <tr>
-                  <td>DeployHardpointToggle</td>
-                  <td>R2C7</td>
-               </tr>
-               <tr>
-                  <td>DeployHeatSink</td>
-                  <td>R3C7</td>
-               </tr>
-               <tr>
-                  <td>Hyperspace</td>
-                  <td>R2C3</td>
-               </tr>
-               <tr>
-                  <td>PhotoCameraToggle</td>
-                  <td>R5C1</td>
-               </tr>
-               <tr>
-                  <td>SelectTargetsTarget</td>
-                  <td>R1C4</td>
-               </tr>
-               <tr>
-                  <td>SetSpeed100</td>
-                  <td>R2C4</td>
-               </tr>
-               <tr>
-                  <td>SetSpeed75</td>
-                  <td>R3C4</td>
-               </tr>
-               <tr>
-                  <td>SetSpeedZero</td>
-                  <td>R5C4</td>
-               </tr>
-               <tr>
-                  <td>Supercruise</td>
-                  <td>R2C5</td>
-               </tr>
-               <tr>
-                  <td>TargetNextRouteSystem</td>
-                  <td>R1C7</td>
-               </tr>
-               <tr>
-                  <td>Target Wingman 1</td>
-                  <td>R1C1</td>
-               </tr>
-               <tr>
-                  <td>Target Wingman 2</td>
-                  <td>R1C2</td>
-               </tr>
-               <tr>
-                  <td>Target Wingman 3</td>
-                  <td>R1C3</td>
-               </tr>
-               <tr>
-                  <td>WingNavLock</td>
-                  <td>R1C5</td>
-               </tr>
-            </table>
-         </fieldset>
-         <fieldset>
-            <h3>Gamepad</h3>
-            <table border="1">
-               <tr>
-                  <td>ToggleReverseThrottleInput<b> (hold)</b></td>
-                  <td>Throttle Right Toggle Switch</td>
-               </tr>
-            </table>
-         </fieldset>
-         <fieldset>
+      <hr>
+      <h2>By Device, by Action</h2><a name="da"></a><fieldset>
+         <fieldset style="float:right">
             <h3>Keyboard</h3>
             <table border="1">
                <tr>
@@ -178,6 +100,18 @@
                   <td>J</td>
                </tr>
                <tr>
+                  <td>IncreaseEnginesPower</td>
+                  <td>Numpad 2</td>
+               </tr>
+               <tr>
+                  <td>IncreaseSystemsPower</td>
+                  <td>Numpad 1</td>
+               </tr>
+               <tr>
+                  <td>IncreaseWeaponsPower</td>
+                  <td>Numpad 3</td>
+               </tr>
+               <tr>
                   <td>MicrophoneMute</td>
                   <td>BackSlash</td>
                </tr>
@@ -196,6 +130,18 @@
                <tr>
                   <td>QuickCommsPanel</td>
                   <td>Enter</td>
+               </tr>
+               <tr>
+                  <td>RadarDecreaseRange</td>
+                  <td>Numpad Divide</td>
+               </tr>
+               <tr>
+                  <td>RadarIncreaseRange</td>
+                  <td>Numpad Multiply</td>
+               </tr>
+               <tr>
+                  <td>ResetPowerDistribution</td>
+                  <td>Numpad 0</td>
                </tr>
                <tr>
                   <td>SelectTargetsTarget</td>
@@ -220,6 +166,33 @@
                <tr>
                   <td>WingNavLock</td>
                   <td>Minus</td>
+               </tr>
+            </table>
+         </fieldset>
+         <fieldset>
+            <h3>Gamepad</h3>
+            <table border="1">
+               <tr>
+                  <td>ToggleReverseThrottleInput<b> (hold)</b></td>
+                  <td>Throttle Right Toggle Switch</td>
+               </tr>
+            </table>
+         </fieldset>
+         <fieldset>
+            <h3>Mouse</h3>
+            <table border="1">
+               <tr>
+                  <td>UI_Back</td>
+                  <td>Button 4</td>
+               </tr>
+            </table>
+         </fieldset>
+         <fieldset>
+            <h3>G940 Pedals</h3>
+            <table border="1">
+               <tr>
+                  <td>YawAxisRaw</td>
+                  <td>Rudder (inverted)</td>
                </tr>
             </table>
          </fieldset>
@@ -307,12 +280,8 @@
                   <td>Trigger (initial)</td>
                </tr>
                <tr>
-                  <td>RadarDecreaseRange</td>
-                  <td>Decrease RY Axis</td>
-               </tr>
-               <tr>
-                  <td>RadarIncreaseRange</td>
-                  <td>Increase RY Axis</td>
+                  <td>RadarRangeAxis</td>
+                  <td>Trim 3</td>
                </tr>
                <tr>
                   <td>ResetPowerDistribution</td>
@@ -378,11 +347,71 @@
             </table>
          </fieldset>
          <fieldset>
-            <h3>G940 Pedals</h3>
+            <h3>P8000</h3>
             <table border="1">
                <tr>
-                  <td>YawAxisRaw</td>
-                  <td>Rudder Axis (inverted)</td>
+                  <td>CycleNextSubsystem</td>
+                  <td>R2C1</td>
+               </tr>
+               <tr>
+                  <td>CyclePreviousSubsystem</td>
+                  <td>R3C1</td>
+               </tr>
+               <tr>
+                  <td>DeployHardpointToggle</td>
+                  <td>R2C7</td>
+               </tr>
+               <tr>
+                  <td>DeployHeatSink</td>
+                  <td>R3C7</td>
+               </tr>
+               <tr>
+                  <td>Hyperspace</td>
+                  <td>R2C3</td>
+               </tr>
+               <tr>
+                  <td>PhotoCameraToggle</td>
+                  <td>R5C1</td>
+               </tr>
+               <tr>
+                  <td>SelectTargetsTarget</td>
+                  <td>R1C4</td>
+               </tr>
+               <tr>
+                  <td>SetSpeed100</td>
+                  <td>R2C4</td>
+               </tr>
+               <tr>
+                  <td>SetSpeed75</td>
+                  <td>R3C4</td>
+               </tr>
+               <tr>
+                  <td>SetSpeedZero</td>
+                  <td>R5C4</td>
+               </tr>
+               <tr>
+                  <td>Supercruise</td>
+                  <td>R2C5</td>
+               </tr>
+               <tr>
+                  <td>TargetNextRouteSystem</td>
+                  <td>R1C7</td>
+               </tr>
+               <tr>
+                  <td>Target Wingman 1</td>
+                  <td>R1C1</td>
+               </tr>
+               <tr>
+                  <td>Target Wingman 2</td>
+                  <td>R1C2</td>
+               </tr>
+               <tr>
+                  <td>Target Wingman 3</td>
+                  <td>R1C3</td>
+               </tr>
+               <tr>
+                  <td>WingNavLock</td>
+                  <td>R1C5</td>
                </tr>
             </table>
          </fieldset>
@@ -503,97 +532,10 @@
                </tr>
             </table>
          </fieldset>
-         <fieldset>
-            <h3>Mouse</h3>
-            <table border="1">
-               <tr>
-                  <td>UI_Back</td>
-                  <td>Button 4</td>
-               </tr>
-            </table>
-         </fieldset>
       </fieldset>
-      <hr><a name="dk"></a><h2>By Device, by Key</h2>
-      <fieldset>
-         <fieldset>
-            <h3>P8000</h3>
-            <table border="1">
-               <tr>
-                  <td>R1C1</td>
-                  <td>Target Wingman 1</td>
-               </tr>
-               <tr>
-                  <td>R1C2</td>
-                  <td>Target Wingman 2</td>
-               </tr>
-               <tr>
-                  <td>R1C3</td>
-                  <td>Target Wingman 3</td>
-               </tr>
-               <tr>
-                  <td>R1C4</td>
-                  <td>SelectTargetsTarget</td>
-               </tr>
-               <tr>
-                  <td>R1C5</td>
-                  <td>WingNavLock</td>
-               </tr>
-               <tr>
-                  <td>R1C7</td>
-                  <td>TargetNextRouteSystem</td>
-               </tr>
-               <tr>
-                  <td>R2C1</td>
-                  <td>CycleNextSubsystem</td>
-               </tr>
-               <tr>
-                  <td>R2C3</td>
-                  <td>Hyperspace</td>
-               </tr>
-               <tr>
-                  <td>R2C4</td>
-                  <td>SetSpeed100</td>
-               </tr>
-               <tr>
-                  <td>R2C5</td>
-                  <td>Supercruise</td>
-               </tr>
-               <tr>
-                  <td>R2C7</td>
-                  <td>DeployHardpointToggle</td>
-               </tr>
-               <tr>
-                  <td>R3C1</td>
-                  <td>CyclePreviousSubsystem</td>
-               </tr>
-               <tr>
-                  <td>R3C4</td>
-                  <td>SetSpeed75</td>
-               </tr>
-               <tr>
-                  <td>R3C7</td>
-                  <td>DeployHeatSink</td>
-               </tr>
-               <tr>
-                  <td>R5C1</td>
-                  <td>PhotoCameraToggle</td>
-               </tr>
-               <tr>
-                  <td>R5C4</td>
-                  <td>SetSpeedZero</td>
-               </tr>
-            </table>
-         </fieldset>
-         <fieldset>
-            <h3>Gamepad</h3>
-            <table border="1">
-               <tr>
-                  <td>Throttle Right Toggle Switch</td>
-                  <td>ToggleReverseThrottleInput<b> (hold)</b></td>
-               </tr>
-            </table>
-         </fieldset>
-         <fieldset>
+      <hr>
+      <h2>By Device, by Key</h2><a name="dk"></a><fieldset>
+         <fieldset style="float:right">
             <h3>Keyboard</h3>
             <table border="1">
                <tr>
@@ -709,8 +651,83 @@
                   <td>OrbitLinesToggle</td>
                </tr>
                <tr>
+                  <td>Numpad 0</td>
+                  <td>ResetPowerDistribution</td>
+               </tr>
+               <tr>
+                  <td>Numpad 1</td>
+                  <td>IncreaseSystemsPower</td>
+               </tr>
+               <tr>
+                  <td>Numpad 2</td>
+                  <td>IncreaseEnginesPower</td>
+               </tr>
+               <tr>
+                  <td>Numpad 3</td>
+                  <td>IncreaseWeaponsPower</td>
+               </tr>
+               <tr>
                   <td>BackSlash</td>
                   <td>MicrophoneMute</td>
+               </tr>
+               <tr>
+                  <td>Numpad Divide</td>
+                  <td>RadarDecreaseRange</td>
+               </tr>
+               <tr>
+                  <td>Numpad Multiply</td>
+                  <td>RadarIncreaseRange</td>
+               </tr>
+               <tr>
+                  <td>G1</td>
+                  <td>Power: Engines (SW)</td>
+               </tr>
+               <tr>
+                  <td>G2</td>
+                  <td>Power: Weapons (SE)</td>
+               </tr>
+               <tr>
+                  <td>G3</td>
+                  <td>Power: Weapons (E)</td>
+               </tr>
+               <tr>
+                  <td>G7</td>
+                  <td>Power: Weapons (S)</td>
+               </tr>
+               <tr>
+                  <td>G8</td>
+                  <td>Power: System (E)</td>
+               </tr>
+               <tr>
+                  <td>G9</td>
+                  <td>Power: System (W)</td>
+               </tr>
+            </table>
+         </fieldset>
+         <fieldset>
+            <h3>Gamepad</h3>
+            <table border="1">
+               <tr>
+                  <td>Throttle Right Toggle Switch</td>
+                  <td>ToggleReverseThrottleInput<b> (hold)</b></td>
+               </tr>
+            </table>
+         </fieldset>
+         <fieldset>
+            <h3>Mouse</h3>
+            <table border="1">
+               <tr>
+                  <td>Button 4</td>
+                  <td>UI_Back</td>
+               </tr>
+            </table>
+         </fieldset>
+         <fieldset>
+            <h3>G940 Pedals</h3>
+            <table border="1">
+               <tr>
+                  <td>Rudder</td>
+                  <td>YawAxisRaw</td>
                </tr>
             </table>
          </fieldset>
@@ -787,6 +804,10 @@
                   <td>UI_Up</td>
                </tr>
                <tr>
+                  <td>Trim 3</td>
+                  <td>RadarRangeAxis</td>
+               </tr>
+               <tr>
                   <td>POV1Down</td>
                   <td>ResetPowerDistribution</td>
                   <td>UI_Down</td>
@@ -801,22 +822,74 @@
                   <td>IncreaseWeaponsPower</td>
                   <td>UI_Right</td>
                </tr>
-               <tr>
-                  <td>Decrease RY Axis</td>
-                  <td>RadarDecreaseRange</td>
-               </tr>
-               <tr>
-                  <td>Increase RY Axis</td>
-                  <td>RadarIncreaseRange</td>
-               </tr>
             </table>
          </fieldset>
          <fieldset>
-            <h3>G940 Pedals</h3>
+            <h3>P8000</h3>
             <table border="1">
                <tr>
-                  <td>Rudder Axis</td>
-                  <td>YawAxisRaw</td>
+                  <td>R1C1</td>
+                  <td>Target Wingman 1</td>
+               </tr>
+               <tr>
+                  <td>R1C2</td>
+                  <td>Target Wingman 2</td>
+               </tr>
+               <tr>
+                  <td>R1C3</td>
+                  <td>Target Wingman 3</td>
+               </tr>
+               <tr>
+                  <td>R1C4</td>
+                  <td>SelectTargetsTarget</td>
+               </tr>
+               <tr>
+                  <td>R1C5</td>
+                  <td>WingNavLock</td>
+               </tr>
+               <tr>
+                  <td>R1C7</td>
+                  <td>TargetNextRouteSystem</td>
+               </tr>
+               <tr>
+                  <td>R2C1</td>
+                  <td>CycleNextSubsystem</td>
+               </tr>
+               <tr>
+                  <td>R2C3</td>
+                  <td>Hyperspace</td>
+               </tr>
+               <tr>
+                  <td>R2C4</td>
+                  <td>SetSpeed100</td>
+               </tr>
+               <tr>
+                  <td>R2C5</td>
+                  <td>Supercruise</td>
+               </tr>
+               <tr>
+                  <td>R2C7</td>
+                  <td>DeployHardpointToggle</td>
+               </tr>
+               <tr>
+                  <td>R3C1</td>
+                  <td>CyclePreviousSubsystem</td>
+               </tr>
+               <tr>
+                  <td>R3C4</td>
+                  <td>SetSpeed75</td>
+               </tr>
+               <tr>
+                  <td>R3C7</td>
+                  <td>DeployHeatSink</td>
+               </tr>
+               <tr>
+                  <td>R5C1</td>
+                  <td>PhotoCameraToggle</td>
+               </tr>
+               <tr>
+                  <td>R5C4</td>
+                  <td>SetSpeedZero</td>
                </tr>
             </table>
          </fieldset>
@@ -916,15 +989,6 @@
                </tr>
             </table>
          </fieldset>
-         <fieldset>
-            <h3>Mouse</h3>
-            <table border="1">
-               <tr>
-                  <td>Button 4</td>
-                  <td>UI_Back</td>
-               </tr>
-            </table>
-         </fieldset>
       </fieldset>
       <hr><a name="unbound"></a><h2>Unbound</h2>
       <fieldset>
@@ -983,6 +1047,7 @@
          <fieldset>LeftThrustButton</fieldset>
          <fieldset>LeftThrustButton_Landing</fieldset>
          <fieldset>MouseReset</fieldset>
+         <fieldset>PhotoCameraToggle_Buggy<span title="You can select between toggle and hold, current is toggle"> (holdable)</span></fieldset>
          <fieldset>PitchAxisAlternate (axis)</fieldset>
          <fieldset>PitchAxis_Landing (axis)</fieldset>
          <fieldset>PitchDownButton</fieldset>
@@ -990,7 +1055,6 @@
          <fieldset>PitchUpButton</fieldset>
          <fieldset>PitchUpButton_Landing</fieldset>
          <fieldset>QuickCommsPanel_Buggy</fieldset>
-         <fieldset>RadarRangeAxis (axis)</fieldset>
          <fieldset>ResetPowerDistribution_Buggy</fieldset>
          <fieldset>RightThrustButton</fieldset>
          <fieldset>RightThrustButton_Landing</fieldset>
@@ -1014,6 +1078,7 @@
          <fieldset>ToggleCargoScoop_Buggy<span title="You can select between toggle and hold, current is toggle"> (holdable)</span></fieldset>
          <fieldset>UIFocus</fieldset>
          <fieldset>UIFocus_Buggy</fieldset>
+         <fieldset>UI_Toggle</fieldset>
          <fieldset>UpThrustButton</fieldset>
          <fieldset>UpThrustButton_Landing</fieldset>
          <fieldset>UseAlternateFlightValuesToggle<span title="You can select between toggle and hold, current is toggle"> (togglable)</span></fieldset>
